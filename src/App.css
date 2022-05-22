@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../src/Assets/Fonts/mulish-v11-latin-regular.woff2") format("woff2"),
+    url("../src/Assets/Fonts/mulish-v11-latin-regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""),
+    url("../src/Assets/Fonts/mulish-v11-latin-700.woff2") format("woff2"),
+    url("../src/Assets/Fonts/mulish-v11-latin-700.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +29,11 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +64,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.auth {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.trending {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.trending__img {
+  border-radius: 14px;
+  margin-bottom: 25px;
+  width: 750px;
+  height: 450px;
 }
